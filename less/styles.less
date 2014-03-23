@@ -239,9 +239,10 @@ body {
 
 // twitter follow button
 .twitter-follow-button {
-	position: absolute;
-	top: 20px;
-	right: 20px;
+	position: relative;
+	z-index: 2000; // as primary nav is z-index: 1000
+	float: right;
+	margin: 20px 20px 0 0;
 }
 /* ============================ */
 
