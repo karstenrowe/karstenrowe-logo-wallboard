@@ -41,8 +41,18 @@
 @grey: #6e655e;
 @grey-lt: #ab621a;
 
-@off-white: #f1f3f6; // base color
-@warm-white: #ebe7e4;
+@brand-dk: #ce2c42;
+@brand: #fa4a62; // Red orange
+@brand-lt: #EE836E;
+@brand-bg: #fff1ef;
+
+@grey-dk: #48555d;
+@grey: #66757f;
+@grey-lt: #c1c7cb;
+
+@mint: #f4fffd;
+@yellow: #fffcf4;
+@off-white: #ebe7e4; // base color
 @white: #ffffff;
 /* ============================ */
 
@@ -99,7 +109,7 @@ body {
 	font-weight: normal;
 	line-height: 21px;
 	color: @grey;
-	background-color: lighten(@warm-white, 7%);
+	background-color: lighten(@off-white, 7%);
 	.2x('../img/bg/bg-logo-wall-footer.jpg', "no-repeat", 601px, 178px);
 	background-position: 50% 100%;
 }
@@ -147,20 +157,19 @@ body {
 	}
 	// buttons
 	.btn-primary {
-		text-shadow: 0 1px 1px rgba(255,255,255, 0.2);
-	  color: @brand-dk;
-	  background-color: lighten(@brand, 10%);
+		text-shadow: none;
+	  color: @white;
+	  background-color: @brand;
 	  box-shadow: inset 0 1px 1px rgba(255,255,255, 0.35), 0 1px 1px rgba(0,0,0, 0.2);
 	  border-color: @brand-dk;
 	  margin: 8px 6px 8px 0;
 		&:hover {
-		  color: @grey-dk;
-		  background-color: @brand;
+		  color: @white;
+		  background-color: @brand-dk;
 		  box-shadow: inset 0 0px 0px 1px rgba(255,255,255, 0.15), 0 1px 1px rgba(0,0,0, 0.3);
 		  border-color: @brand-dk;
 		}
 		&:active {
-			color: @grey-dk;
 			background-color: @brand;
 			box-shadow: none;
 		  border-color: @brand;
@@ -251,7 +260,7 @@ body {
 /* = page header = */
 /* ============================ */
 .page-header {
-	border-bottom: 1px dotted @warm-white;
+	border-bottom: 1px dotted @off-white;
 	margin: 0 0 30px 0;
 	padding: 0 0 20px;
 	.img {
@@ -321,8 +330,8 @@ body {
 				font-style: italic;
 				text-align: center;
 				border: none;
-				border-top: 1px dotted @warm-white;
-				border-bottom: 1px dotted @warm-white;
+				border-top: 1px dotted @off-white;
+				border-bottom: 1px dotted @off-white;
 				position: relative;
 				margin: 24px 0;
 				padding: 24px 24px 32px;
